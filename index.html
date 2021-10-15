@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    MY web site
+</head>
+
+<body>
+    <?php
+echo "My first PHP script!";
+?>
+        <script>
+            console.log('work like hell .............');
+            const students = [];
+            const addStudent = (stname, stage, stdatesWhenAbsent, staddress) => {
+                const student = {
+                    name: stname,
+                    age: stage,
+                    Whenabsent: stdatesWhenAbsent,
+                    address: staddress
+                }
+                students.push(student);
+            };
+            addStudent('john', 23, [5, 9], {
+                street: '22 kokuji',
+                pincode: '1234',
+                city: 'tokyo'
+            });
+            addStudent('john', 23, [5, 9], {
+                street: '22 kokuji',
+                pincode: '1234',
+                city: 'tokyo'
+            });
+            console.log(JSON.stringify("Total student " + students.length));
+            console.log(JSON.stringify(`Total student :${students.length}`));
+            console.log(JSON.stringify(students));
+            const a = 10;
+            const b = 5;
+            let result = a > b && a || b;
+            console.log(result);
+            result = a < b && a || b;
+            console.log(result);
+
+            const sum = (a, b) =>
+                a + b;
+
+            console.log(sum(2, 3));
+            let x = 2;
+            let y = 2;
+            x++;
+            console.log(x);
+            // console.log(x++);
+            //  console.log(x++);
+            if (x === y) {
+                console.log(x === y);
+            } else {
+                console.log(x !== y);
+            }
+        </script>
+
+</body>
+
+</html>
