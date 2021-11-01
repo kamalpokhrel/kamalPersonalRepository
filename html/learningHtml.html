@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <Script>
+                const x= 12;
+                const y= 12;
+                y>x ? console.log("Y is greater") : (x>y ? console.log("X is greater") : console.log("Both are equal"));
+        const weekOfTheDay=1;
+                switch(weekOfTheDay){
+                    case 1 : 
+                    console.log('The day is Sunday');
+                    break;
+                    case 2:
+                    console.log("The day is Monday");
+                    break;
+                    case 3:
+                    console.log("The day is Tuesday");
+                    break;
+                    case 4:
+                    console.log("The day is Wednesday");
+                    break;
+                    case 5:
+                    console.log("The day is Thursday");
+                    break;
+                    case 6:
+                    console.log("The day is Friday");
+                    break;
+                    case 7:
+                    console.log("The day is Saturday");
+                    break;
+                    default:
+                    console.log("Invilade day");
+                    break;
+                }
+    const student=["kamal","hari","shyam","ram"];
+    console.log(student.length);
+
+    let p=0;
+    do{
+        console.log(student[p]);
+        p++;
+    }while(student.length>p);
+    //let t=0;
+        while(student.length>p){
+           console.log(JSON.stringify( student[p]));
+          p++;
+    }
+    
+      for (let x=0; x < student.length; x++){
+        if(x===2)
+        {
+            continue;
+        } 
+        console.log(student[x]);
+       
+        }
+        //array
+        const student1=[{name:"kamal", address:"Pokhara",age:21},//object1
+                         {name:"hari",address:"Pokhara",age:22},//object2
+                         {name:"shyam",address:"Pokhara",age:33},//object3
+                        {name:"ram",address:"Pokhara",age:23}];//object4
+                        //
+    for(let student2 of student1){
+        console.log(JSON.stringify(student2.name));
+        
+    }
+    console.log(student1.length);
+    for(let stud of student){
+        console.log(stud);
+    }
+    console.log(student);
+
+    student1.forEach(function(allstudent,index,student1){
+        console.log(allstudent.name);
+    });
+    const columns = [
+    { label: 'タイトル', fieldName: 'Title', wrapText : true,// object の中にobject 
+        cellAttributes: { 
+            iconName: { fieldName: 'icon' }, iconPosition: 'left' 
+        }
+    },
+    { label: '作成者',  fieldName: 'CREATED_BY',
+        cellAttributes: { 
+            iconName: 'standard:user', iconPosition: 'left' 
+        }
+    },
+    { label: 'サイズ',   fieldName: 'Size' },
+    { label: 'プレビュー', type:  'button', typeAttributes: { 
+            label: 'プレビュー',  name: 'Preview',  variant: 'brand-outline',
+            iconName: 'utility:preview', iconPosition: 'right'
+        } 
+    },
+    { label: 'ダウンロード', type:  'button', typeAttributes: { 
+            label: 'ダウンロード', name: 'Download', variant: 'brand', iconName: 'action:download', 
+            iconPosition: 'right' 
+        } 
+    },
+    { label: '削除', type:  'button', typeAttributes: { 
+            label: '削除',   name: 'Delete',   variant: 'destructive',iconName: 'standard:record_delete', 
+            iconPosition: 'right' 
+        } 
+    } 
+];
+console.log(columns);
+const   img = new Image();
+img.onload = async function() {
+    const result = await calculation ();
+}
+calculation();
+    console.log(this.width + 'x' + this.height);
+
+img.src = 'download.jpg';
+console.log('It is 8oclok\'s');//エスケープ
+console.log("Its 8oclock's now.");//エスケープ処理をしなくてｍぽ
+console.log('It is 8oclock');
+
+
+
+
+
+/*var image= new image();
+//var width;
+//var height;
+//image()
+{
+    width = image.width;
+    height = image.height;
+  }
+ image.src='download.jpg';
+ console.log(width);
+ console.log(height); */
+    </Script>
+</body>
+</html>
